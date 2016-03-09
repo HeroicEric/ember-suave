@@ -39,7 +39,7 @@
     "preset"
   ],
   "dependencies": {
-    "broccoli-jscs": "^1.2.2",
+    "broccoli-jscs": "^1.4.0",
     "ember-cli-babel": "^5.1.6",
     "jscs-ember-deprecations": "0.0.27",
     "temp": "0.8.3"

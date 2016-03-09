@@ -61,6 +61,26 @@ To disable a rule, set its value to `null` or `false`.
 }
 ```
 
+### Mocha
+
+If you're using Mocha instead of QUnit, you'll need to configure
+[broccoli-jscs](https://github.com/kellyselden/broccoli-jscs) to generate tests
+formatted like Mocha expects:
+
+```javascript
+// ember-cli-build.js
+
+module.exports = function(defaults) {
+  var app = new EmberApp(defaults, {
+    jscsOptions: {
+      testFramework: 'mocha'
+    }
+  });
+
+  return app.toTree();
+};
+```
+
 ## Development
 
 * `git clone` this repository
